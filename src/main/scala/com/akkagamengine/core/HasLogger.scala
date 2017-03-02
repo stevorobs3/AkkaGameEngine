@@ -3,17 +3,17 @@ package com.akkagamengine.core
 import com.badlogic.gdx.Gdx
 
 trait HasLogger {
-  val Prefix : String
+  val LogId : String
 
   def debug(message : String) : Unit = {
-    Gdx.app.debug(Prefix, message)
+    Gdx.app.debug(LogId, message)
   }
 
   def info(message : String) : Unit = {
-    Gdx.app.log(Prefix, message)
+    Gdx.app.log(LogId, message)
   }
 
   def error(message : String) : Unit = {
-    Gdx.app.debug(Prefix, message)
+    Gdx.app.debug(LogId, message)
   }
 }

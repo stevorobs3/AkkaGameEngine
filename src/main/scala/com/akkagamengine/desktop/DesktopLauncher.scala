@@ -5,5 +5,8 @@ import com.badlogic.gdx.backends.lwjgl.{LwjglApplication, LwjglApplicationConfig
 
 object DesktopLauncher extends App {
   val config = new LwjglApplicationConfiguration()
+  config.title = "demo"
+  config.width = 480
+  config.height = 320
   new LwjglApplication(new AkkaGameEngine(), config)
 }
